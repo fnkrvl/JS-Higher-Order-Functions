@@ -124,16 +124,62 @@ const autos = [
 	{ marca: 'Audi', modelo: 'A4', year: 2016, precio: 30000, puertas: 4, color: 'Azul', transmision: 'automatico' }
 ];
 
+// for (let i = 0; i < autos.length; i++) {
+// 	console.log(autos[i]);
+// }
 // forEach
+// let resultado = [];
+// autos.forEach(auto => {
+// 	if(auto.color === 'Rojo'){
+//         resultado.push(auto);
+//     }
+// });
+// console.log(resultado);
+
+
+// let resultado = autos.forEach(auto => {
+// 	return auto;
+// });
+// console.log(resultado);
 
 // map
+// let resultado = autos.map(auto => {
+// 	if(auto.marca === 'BMW') {
+// 		return auto;
+// 	}
+// });
+// console.log(resultado);
+
 
 // filter
+// let resultado = autos.filter(auto =>  auto.marca !== 'BMW' );
+// let resultado = autos.filter(auto =>  auto.color === 'Rojo' );
+// let resultado = autos.filter(auto =>  auto.year === 2018 );
+// let resultado = autos.filter(auto =>  auto.year > 2015 );
+// let resultado = autos.filter(auto =>  auto.precio > 50000 );
+// let resultado = autos.filter(auto =>  auto.puertas === 2 );
+// let resultado = autos.filter(auto =>  auto.transmision === 'manual' );
+// let resultado = autos.filter(auto =>  auto.year >= 2015 && auto.year <= 2017 );
+// let resultado = autos.filter(auto =>  auto.year >= 2016 && auto.marca === 'BMW' );
+// console.log(resultado);
+
 
 // find
+// let resultado = autos.find(auto => auto.marca === 'BMW');
+// let resultado = autos.find(auto => auto.modelo === 'Mustang');
+// console.log(resultado);
 
 // reduce
 
+// let resultado = autos.reduce((total, auto) => total + auto.precio, 0 );
+
+// const numeros = [1,2,3];
+// let resultado = numeros.reduce((total, numero) => total + numero, 100);
+
+// console.log(resultado);
+
 // some
-
-
+// let resultado = autos.some(auto => auto.marca === 'BMW');
+// let resultado = autos.some(auto => auto.marca === 'Ferrari');
+let resultado = autos.some(auto => auto.precio > 1000000);
+console.log(resultado);
